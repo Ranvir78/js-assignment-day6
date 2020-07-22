@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			padding: 25px;
+			background-color: white;
+			color:black;
+			font-size: 25px;
+		   }
+			.dark-mode{
+				background-color:black ;
+			color:white;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1 id="nam">hello</h1>
+    <h4 id="time"></h4>
+<button onclick="myFunction()"> Dark Mode</button>
+
+<script type="text/javascript">
+	const name = prompt("Enter your name","Anonymous");
+
+    nam.innerText += `Welcome ${name}`;
+
+    const ctime = document.getElementById('time');
+
+
+function clock(){
+    let date = new Date();
+    let time = date.toLocaleTimeString();
+    ctime.innerText = time;
+}
+function myFunction(){
+
+var e= document.body;
+	e.classList.toggle("dark-mode");
+}
+    
+   
+
+ clock();
+</script>
+
+</body>
+</html>
